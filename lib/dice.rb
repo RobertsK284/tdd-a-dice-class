@@ -1,10 +1,10 @@
 class Dice
 
-  def roll(number)
-    roll_sum = 0
-    number.times do
-      roll_sum += rand(6) + 1
+  def roll(number_of_dice)
+    die_scores = []
+    number_of_dice.times do
+      die_scores << (rand(6) + 1)
     end
-    return roll_sum
+    return die_scores
   end
 end
