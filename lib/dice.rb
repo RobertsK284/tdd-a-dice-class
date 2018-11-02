@@ -1,6 +1,10 @@
 class Dice
 
-  def roll
-    return rand(6) + 1
+  def roll(number)
+    roll_sum = 0
+    number.times do
+      roll_sum += rand(6) + 1
+    end
+    return roll_sum
   end
 end

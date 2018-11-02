@@ -1,3 +1,3 @@
 require './lib/dice'
 dice = Dice.new
-dice.roll
+dice.roll(3)
